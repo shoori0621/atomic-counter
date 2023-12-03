@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReduceButton countが0の時 グレーアウトされたReduceButtonを描画できる 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "gray",
+      "height": 50,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 50,
+    }
+  }
+  testID="reduce-button"
+>
+  <Text
+    style={
+      {
+        "color": "white",
+        "fontSize": 20,
+      }
+    }
+  >
+    -
+  </Text>
+</View>
+`;
+
+exports[`ReduceButton countが0より大きい時 通常のReduceButtonを描画できる 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#008080",
+      "height": 50,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 50,
+    }
+  }
+  testID="reduce-button"
+>
+  <Text
+    style={
+      {
+        "color": "white",
+        "fontSize": 20,
+      }
+    }
+  >
+    -
+  </Text>
+</View>
+`;

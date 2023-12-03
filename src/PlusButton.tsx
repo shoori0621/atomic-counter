@@ -12,7 +12,10 @@ export default function PlusButton(props: Props) {
     setCounter(count + 1);
   }, [count, setCounter]);
   return (
-    <TouchableOpacity style={styles.button} onPress={addCounter}>
+    <TouchableOpacity
+      style={styles.button}
+      onPress={addCounter}
+      testID="plus-button">
       <Text style={styles.buttonText}>+</Text>
     </TouchableOpacity>
   );

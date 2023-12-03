@@ -15,7 +15,8 @@ export default function ReduceButton(props: Props) {
     <TouchableOpacity
       style={[styles.button, count <= 0 && styles.disabledButton]}
       onPress={reduceCounter}
-      disabled={count <= 0}>
+      disabled={count <= 0}
+      testID="reduce-button">
       <Text style={styles.buttonText}>-</Text>
     </TouchableOpacity>
   );
