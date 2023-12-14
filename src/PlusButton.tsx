@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, StyleSheet, TouchableOpacity} from 'react-native';
+import Button from './components/Button';
 
 interface Props {
   count: number;
@@ -11,26 +11,5 @@ export default function PlusButton(props: Props) {
   const addCounter = React.useCallback(() => {
     setCounter(count + 1);
   }, [count, setCounter]);
-  return (
-    <TouchableOpacity
-      style={styles.button}
-      onPress={addCounter}
-      testID="plus-button">
-      <Text style={styles.buttonText}>+</Text>
-    </TouchableOpacity>
-  );
+  return <Button label={'+'} onPress={addCounter} testId={'plus-btton'} />;
 }
-
-const styles = StyleSheet.create({
-  button: {
-    backgroundColor: '#008080',
-    width: 50,
-    height: 50,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  buttonText: {
-    color: 'white',
-    fontSize: 20,
-  },
-});
